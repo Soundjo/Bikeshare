@@ -76,7 +76,7 @@ dec22$ended_at <- mdy_hm(dec22$ended_at)
 year22 <- bind_rows(jan22, feb22, mar22, apr22, may22, jun22, jul22, aug22, sep22, oct22, nov22, dec22)
 glimpse(year22)
 
-#removing colums
+#removing columns
 year22 <- year22 %>% 
   select(-c(start_lat, start_lng, end_lat, end_lng))
 
